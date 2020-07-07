@@ -1,0 +1,8 @@
+Options All -Indexes
+ErrorDocument 404 http://localhost/sekolah/error/error404.php
+ErrorDocument 403 http://localhost/sekolah/error/error403.php
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteRule ^home index.php?halaman=home [NC,L]
+RewriteRule ^kontak index.php?halaman=kontak#kontak [NC,L]
+</IfModule>

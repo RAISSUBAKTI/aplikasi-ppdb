@@ -1,0 +1,15 @@
+
+ErrorDocument 404 http://localhost/mtsululalbab/error/error404.php
+ErrorDocument 403 http://localhost/mtsululalbab/error/error404.php
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteRule ^detail-([0-9a-zA-Z_-]+) psb-detail.php?detail=$1 [NC,L]
+RewriteRule ^edit-([0-9a-zA-Z_-]+) psb-edit.php?edit=$1 [NC,L]
+RewriteRule ^visi-([0-9a-zA-Z_-]+) psb-web-edit-visimisi.php?visi=$1 [NC,L]
+RewriteRule ^print-102-Zb-index/([0-9a-zA-Z_-]+) printpdf.php?pdf=$1 [NC,L]
+RewriteRule ^print-101-Za-index/ psb-printpdf.php [NC,L]
+RewriteRule ^home index.php [NC,L]
+     
+
+
+</IfModule>

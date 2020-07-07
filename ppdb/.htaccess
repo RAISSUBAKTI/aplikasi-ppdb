@@ -1,0 +1,12 @@
+ErrorDocument 404 http://localhost/mtsululalbab/error/error404.php
+ErrorDocument 403 http://localhost/mtsululalbab/error/error403.php
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteRule ^home index.php?page=home [NC,L]
+RewriteRule ^kunci-masuk index.php?page=kunci [NC,L]
+RewriteRule ^pengumuman pengumuman.php [NC,L]
+RewriteRule ^kunci-proses psb-kunci-proses.php [NC,L]
+RewriteRule ^daftar psb-daftar.php [NC,L]
+RewriteRule ^daftar-proses psb-daftar-proses.php [NC,L]
+RewriteRule ^kunci-hapus psb-kunci-hapus.php [NC,L]
+</IfModule>
